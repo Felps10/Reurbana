@@ -1,18 +1,46 @@
 .body {
   background-color: black;
   color: aliceblue;
-}
-
-#header {
+  font-family: "Indie Flower", cursive;
 }
 
 .landing-main {
   margin-top: 100px;
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navbar nav button {
+}
+
+#navbutton {
+  width: fit-content;
+}
+
 .carousel-inner div img {
   height: 1000px;
   width: 100%;
+}
+
+#oqfazemos {
+  background-color: black;
+}
+#oqfazemos h1 {
+  font-size: 200px;
+}
+
+#oqfazemos ul li {
+  margin: 0 1%;
+  border-radius: 5px;
 }
 
 .col-lg-4 img {
