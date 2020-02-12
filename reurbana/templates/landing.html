@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'main.css' %}" />
     <!-- JS FILE -->
     <script defer src="{% static 'main.js' %}"></script>
+
     <!-- BOOTSTRAP -->
     <link
       rel="stylesheet"
@@ -35,45 +36,39 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <!-- TITLE -->
     <title>Reurbana</title>
   </head>
+  <!-- BODY -->
   <body class="body" data-gr-c-s-loaded="true">
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">REURBANA</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-          </ul>
+    <header id="header">
+      <div class="pos-f-t fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">REURBANA</h5>
+            <span class="text-muted">Você nunca viu nada igual</span>
+          </div>
         </div>
-      </nav>
+        <nav class="navbar navbar-dark bg-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <main role="main">
@@ -96,17 +91,12 @@
             />
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
+                <h1>Por que a Reurbana?</h1>
                 <p>
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Donec id elit non mi porta gravida at eget metus. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit.
+                  Quem somos e nosso diferencial
                 </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
-                    >Sign up today</a
-                  >
-                </p>
+
+                <a class="btn btn-outline-light" href="#diferencial">Hello</a>
               </div>
             </div>
           </div>
@@ -209,7 +199,7 @@
   ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <div class="container marketing">
+      <div id="diferencial" class="container marketing">
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
@@ -227,11 +217,6 @@
               Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
               Praesent commodo cursus magna.
             </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              >
-            </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
@@ -247,11 +232,6 @@
               eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
               amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
               mauris condimentum nibh.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              >
             </p>
           </div>
           <!-- /.col-lg-4 -->
@@ -269,11 +249,6 @@
               semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
               condimentum nibh, ut fermentum massa justo sit amet risus.
             </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              >
-            </p>
           </div>
           <!-- /.col-lg-4 -->
         </div>
@@ -286,14 +261,13 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">
-              First featurette heading.
-              <span class="text-muted">It’ll blow your mind.</span>
+              O que eu sempre quis.
+              <span class="text-muted">By Luinah</span>
             </h2>
             <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+              Quando tudo que você faz é o que você sempre quis, não há quem ou
+              o que te pare. Luinah faz esse som colocando toda sua paixão pela
+              música, e um pouco mais.
             </p>
           </div>
           <div class="col-md-5">
@@ -315,14 +289,12 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">
-              Oh yeah, it’s that good.
-              <span class="text-muted">See for yourself.</span>
+              De onde eu vim.
+              <span class="text-muted">By Mc Topi</span>
             </h2>
             <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+              Um sucesso do rap nacional que vem revolucionando p jeito de fazer
+              rima.
             </p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -340,67 +312,48 @@
         </div>
 
         <hr class="featurette-divider" />
+      </div>
+      <!-- /END THE FEATURETTES -->
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              And lastly, this one. <span class="text-muted">Checkmate.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
+      <div id="network" class="d-md-flex pl-md-3">
+        <!-- <div
+          class="bg-dark mr-md-3 px-md-5 text-center text-white overflow-hidden"
+        >
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
           </div>
-          <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee"></rect>
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
-          </div>
+        </div> -->
+
+        <div class="my-3 p-3">
+          <a target="_blank" href="https://www.facebook.com/ReurbanaRec/"
+            ><img id="facebook" src="{% static 'assets/facebook.png' %}"
+          /></a>
+          <p>/ReurbanaRec</p>
         </div>
 
-        <hr class="featurette-divider" />
+        <!-- <div
+          class="bg-dark mr-md-3 px-md-5 text-center text-white overflow-hidden"
+        >
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+        </div> -->
 
-        <!-- /END THE FEATURETTES -->
+        <div class="my-3 p-3">
+          <a target="_blank" href="https://www.instagram.com/reurbana_/"
+            ><img id="instagram" src="{% static 'assets/network.png' %}"
+          /></a>
+          <p>@reurbana_</p>
+        </div>
       </div>
-      <!-- /.container -->
-
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>
-          © 2017-2019 Company, Inc. · <a href="#">Privacy</a> ·
-          <a href="#">Terms</a>
-        </p>
-      </footer>
     </main>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>'
-        );
-    </script>
-    <script
-      src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-      crossorigin="anonymous"
-    ></script>
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
   </body>
 </html>
