@@ -63,10 +63,10 @@
               <h1 class="navbar-brand">REURBANA</h1>
               <nav id="header-nav">
                 <button class="btn btn-lg btn-outline-success">
-                  O que fazemos
+                  <a href="#oqfazemos"> O que fazemos</a>
                 </button>
                 <button class="btn btn-lg btn-outline-success">
-                  O que já fizemos
+                  <a href="#oqjafizemos">O que já fizemos</a>
                 </button>
                 <button class="btn btn-lg btn-outline-success">
                   Contato
@@ -223,7 +223,7 @@
           <h1>REURBANA</h1>
           <ul class="lead text-muted list-group list-group-horizontal-lg">
             <li class="list-group-item list-group-item-primary">
-              Gravação de Voz
+              Masterização
             </li>
             <li class="list-group-item list-group-item-secondary">
               Gravação de Instrumentos
@@ -232,13 +232,13 @@
               Produção de Beats
             </li>
             <li class="list-group-item list-group-item-danger">
-              Morbi leo risus
+              Remixagem
             </li>
             <li class="list-group-item list-group-item-warning">
-              Morbi leo risus
+              Gravação de Voz
             </li>
             <li class="list-group-item list-group-item-info">
-              Morbi leo risus
+              DJ nas horas vagas
             </li>
           </ul>
         </div>
@@ -301,61 +301,62 @@
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              O que eu sempre quis.
-              <span class="text-muted">By Luinah</span>
-            </h2>
-            <p class="lead">
-              Quando tudo que você faz é o que você sempre quis, não há quem ou
-              o que te pare. Luinah faz esse som colocando toda sua paixão pela
-              música, e um pouco mais.
-            </p>
+        <section id="oqjafizemos">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">
+                O que eu sempre quis.
+                <span class="text-muted">By Luinah</span>
+              </h2>
+              <p class="lead">
+                Quando tudo que você faz é o que você sempre quis, não há quem
+                ou o que te pare. Luinah faz esse som colocando toda sua paixão
+                pela música, e um pouco mais.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500"
+                height="500"
+                src="{% static 'assets/luinah.jpeg' %}"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 500x500"
+              />
+            </div>
           </div>
-          <div class="col-md-5">
-            <img
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              src="{% static 'assets/luinah.jpeg' %}"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            />
-          </div>
-        </div>
 
-        <hr class="featurette-divider" />
+          <hr class="featurette-divider" />
 
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              De onde eu vim.
-              <span class="text-muted">By Mc Topi</span>
-            </h2>
-            <p class="lead">
-              Um sucesso do rap nacional que vem revolucionando p jeito de fazer
-              rima.
-            </p>
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">
+                De onde eu vim.
+                <span class="text-muted">By Mc Topi</span>
+              </h2>
+              <p class="lead">
+                Um sucesso do rap nacional que vem revolucionando p jeito de
+                fazer rima.
+              </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500"
+                height="500"
+                src="{% static 'assets/mctopi.jpeg' %}"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: 500x500"
+              />
+            </div>
           </div>
-          <div class="col-md-5 order-md-1">
-            <img
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              src="{% static 'assets/mctopi.jpeg' %}"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            />
-          </div>
-        </div>
 
-        <hr class="featurette-divider" />
+          <hr class="featurette-divider" />
+        </section>
       </div>
       <!-- /END THE FEATURETTES -->
 

@@ -19,7 +19,16 @@
   width: 100%;
 }
 
-.navbar nav button {
+#header-nav button a {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+#header-nav button a:hover {
+  color: #28a745;
+  border-color: #28a745;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 #navbutton {
@@ -37,7 +46,9 @@
 #oqfazemos h1 {
   font-size: 200px;
 }
-
+#oqfazemos div {
+  width: 100%;
+}
 #oqfazemos ul li {
   margin: 0 1%;
   border-radius: 5px;
