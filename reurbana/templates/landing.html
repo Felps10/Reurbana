@@ -190,7 +190,7 @@
                 </p>
                 <p>
                   <a
-                    class="btn btn-lg btn-outline-success"
+                    class="btn btn-lg btn-outline-light"
                     href="#network"
                     role="button"
                     >Dar um check</a
@@ -232,10 +232,11 @@
                 <span class="text-muted">Reurbana</span>
               </h2>
               <p class="lead">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
-                id ligula porta felis euismod semper. Praesent commodo cursus
-                magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                ac cursus commodo.
+                A melhor motivação é ter amor pelo que faz. A Reurbana foi
+                criada com o intuito de promover serviços de alta qualidade com
+                um preço abaixo do mercado. Aqui o artista tem total domínio do
+                que será o resultado final do seu trabalho, sem precisar pagar o
+                olho da cara.
               </p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -247,6 +248,7 @@
               />
             </div>
           </div>
+          <h4>O que fazemos?</h4>
           <ul class="lead text-muted list-group list-group-horizontal-lg">
             <li class="list-group-item list-group-item-primary">
               Masterização
@@ -281,6 +283,7 @@
             />
 
             <h2>Profissionalismo</h2>
+            <p>Profissionais altamente qualificados a sua disposição</p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
@@ -291,6 +294,7 @@
               src="{% static 'assets/shield.png' %}"
             />
             <h2>Qualidade</h2>
+            <p>Compromisso com a qualidade do som</p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
@@ -301,6 +305,7 @@
               src="{% static 'assets/price.png' %}"
             />
             <h2>Preço</h2>
+            <p>Simplesmente o melhor preço do mercado</p>
           </div>
           <!-- /.col-lg-4 -->
         </div>
@@ -369,44 +374,47 @@
       <!-- /END THE FEATURETTES -->
 
       <div id="network" class="d-md-flex pl-md-3">
-        <!-- <div
-          class="bg-dark mr-md-3 px-md-5 text-center text-white overflow-hidden"
-        >
-          <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-          </div>
-        </div> -->
+        <h1>Entre em nosso network!</h1>
 
         <div class="my-3 p-3">
           <a target="_blank" href="https://www.facebook.com/ReurbanaRec/"
-            ><img id="facebook" src="{% static 'assets/facebook.png' %}"
+            ><img
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              id="facebook"
+              src="{% static 'assets/facebook.png' %}"
           /></a>
           <p>/ReurbanaRec</p>
         </div>
 
-        <!-- <div
-          class="bg-dark mr-md-3 px-md-5 text-center text-white overflow-hidden"
-        >
-          <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-          </div>
-        </div> -->
-
         <div class="my-3 p-3">
           <a target="_blank" href="https://www.instagram.com/reurbana_/"
-            ><img id="instagram" src="{% static 'assets/network.png' %}"
+            ><img
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              src="{% static 'assets/network.png' %}"
           /></a>
           <p>@reurbana_</p>
+        </div>
+        <div class="my-3 p-3">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCrSPtEG1XjN08ME7WZJJk9w"
+            ><img
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              id="instagram"
+              src="{% static 'assets/multimedia.png' %}"
+          /></a>
+          <p>Reurbana TV</p>
         </div>
       </div>
     </main>
     <!-- FOOTER -->
-    <footer id="footer" class="footer">
-      <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
-      </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">© 2017-2020 Reurbana</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
     </footer>
   </body>
 </html>

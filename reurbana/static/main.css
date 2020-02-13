@@ -39,7 +39,7 @@
   position: absolute;
   z-index: 1;
   margin: 10%;
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .carousel-inner div img {
@@ -57,6 +57,18 @@
 #oquefazemos ul li {
   margin: 2% 1%;
   border-radius: 5px;
+}
+
+#diferencial div {
+  margin-top: 4%;
+}
+
+.container ul {
+  margin-top: 4%;
+}
+
+.container h4 {
+  margin-top: 4%;
 }
 
 .col-lg-4 img {
@@ -80,7 +92,7 @@
 #network {
   display: flex;
   justify-content: space-evenly;
-  margin: 5%;
+  margin: 15% auto;
 }
 
 .d-md-flex div {
@@ -88,27 +100,13 @@
   margin-top: 10%;
 }
 
-#facebook {
+#network div a img {
   max-height: 200px;
   margin: 10px auto;
   transition: transform 0.8s, opacity 0.5s;
 }
 
-#facebook:hover {
-  max-height: 230px;
-  margin: 10px auto;
-  cursor: pointer;
-  transform: scale(1.4);
-  transition: transform 0.8s, opacity 0.5s;
-}
-
-#instagram {
-  max-height: 200px;
-  margin: 10px auto;
-  transition: transform 0.8s, opacity 0.5s;
-}
-
-#instagram:hover {
+#network div a img:hover {
   max-height: 230px;
   margin: 10px auto;
   cursor: pointer;
