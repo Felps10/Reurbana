@@ -12,7 +12,7 @@
     <script defer src="{% static 'main.js' %}"></script>
     <!-- GOOGLE FONTS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap"
       rel="stylesheet"
     />
     <!-- BOOTSTRAP -->
@@ -60,16 +60,15 @@
               id="header"
               class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
             >
-              <h1 class="navbar-brand">REURBANA</h1>
               <nav id="header-nav">
                 <button class="btn btn-lg btn-outline-success">
-                  <a href="#oqfazemos"> O que fazemos</a>
+                  <a href="#oquefazemos"> O que fazemos</a>
                 </button>
                 <button class="btn btn-lg btn-outline-success">
-                  <a href="#oqjafizemos">O que já fizemos</a>
+                  <a href="#oquejafizemos">O que já fizemos</a>
                 </button>
                 <button class="btn btn-lg btn-outline-success">
-                  Contato
+                  <a href="#network">Contato</a>
                 </button>
               </nav>
             </div>
@@ -92,6 +91,7 @@
     </header>
 
     <main role="main">
+      <h1 id="reurbanatitle">REURBANA</h1>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -111,12 +111,14 @@
             />
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1>Por que a Reurbana?</h1>
+                <h1>Quem somos</h1>
                 <p>
-                  Quem somos e nosso diferencial
+                  A sua nova gravadora
                 </p>
 
-                <a class="btn btn-outline-light" href="#diferencial">Hello</a>
+                <a class="btn btn-lg btn-outline-light" href="#oquefazemos"
+                  >Ir ver</a
+                >
               </div>
             </div>
           </div>
@@ -130,15 +132,16 @@
             />
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+                <h1>Por que a Reurbana</h1>
                 <p>
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Donec id elit non mi porta gravida at eget metus. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit.
+                  Nossos diferenciais
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
-                    >Learn more</a
+                  <a
+                    class="btn btn-lg btn-outline-light"
+                    href="#diferencial"
+                    role="button"
+                    >Ver detalhes</a
                   >
                 </p>
               </div>
@@ -156,15 +159,16 @@
             />
             <div class="container">
               <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
+                <h1>Um pouco do que já fizemos</h1>
                 <p>
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Donec id elit non mi porta gravida at eget metus. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit.
+                  Luinah e Mc Topi
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
-                    >Browse gallery</a
+                  <a
+                    class="btn btn-lg btn-outline-light"
+                    href="#oquejafizemos"
+                    role="button"
+                    >Dar uma olhada</a
                   >
                 </p>
               </div>
@@ -180,15 +184,16 @@
             />
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+                <h1>Contato</h1>
                 <p>
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Donec id elit non mi porta gravida at eget metus. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit.
+                  Estamos no Insta e Face!
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
-                    >Learn more</a
+                  <a
+                    class="btn btn-lg btn-outline-success"
+                    href="#network"
+                    role="button"
+                    >Dar um check</a
                   >
                 </p>
               </div>
@@ -218,9 +223,30 @@
       <!-- Marketing messaging and featurettes
   ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
-      <section id="oqfazemos" class="jumbotron text-center">
+      <section id="oquefazemos" class="jumbotron text-center">
         <div class="container">
-          <h1>REURBANA</h1>
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">
+                Liberte a criatividade.
+                <span class="text-muted">Reurbana</span>
+              </h2>
+              <p class="lead">
+                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
+                id ligula porta felis euismod semper. Praesent commodo cursus
+                magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
+                ac cursus commodo.
+              </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500"
+                height="500"
+                src="{% static 'assets/logo2.jpeg' %}"
+              />
+            </div>
+          </div>
           <ul class="lead text-muted list-group list-group-horizontal-lg">
             <li class="list-group-item list-group-item-primary">
               Masterização
@@ -251,16 +277,10 @@
               class="bd-placeholder-img rounded-circle"
               width="140"
               height="140"
-              src="{% static 'assets/logo1.jpeg' %}"
+              src="{% static 'assets/pencil.png' %}"
             />
 
             <h2>Profissionalismo</h2>
-            <p>
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna.
-            </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
@@ -268,15 +288,9 @@
               class="bd-placeholder-img rounded-circle"
               width="140"
               height="140"
-              src="{% static 'assets/logo2.jpeg' %}"
+              src="{% static 'assets/shield.png' %}"
             />
             <h2>Qualidade</h2>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-              mauris condimentum nibh.
-            </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
@@ -284,15 +298,9 @@
               class="bd-placeholder-img rounded-circle"
               width="140"
               height="140"
-              src="{% static 'assets/logo3.jpeg' %}"
+              src="{% static 'assets/price.png' %}"
             />
             <h2>Preço</h2>
-            <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
           </div>
           <!-- /.col-lg-4 -->
         </div>
@@ -301,7 +309,7 @@
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider" />
-        <section id="oqjafizemos">
+        <section id="oquejafizemos">
           <div class="row featurette">
             <div class="col-md-7">
               <h2 class="featurette-heading">

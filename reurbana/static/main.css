@@ -1,7 +1,7 @@
 .body {
   background-color: black;
   color: aliceblue;
-  font-family: "Indie Flower", cursive;
+  font-family: "Odibee Sans", cursive;
 }
 
 .landing-main {
@@ -35,22 +35,27 @@
   width: fit-content;
 }
 
+#reurbanatitle {
+  position: absolute;
+  z-index: 1;
+  margin: 10%;
+  font-size: 100px;
+}
+
 .carousel-inner div img {
   height: 1000px;
   width: 100%;
 }
 
-#oqfazemos {
+#oquefazemos {
   background-color: black;
 }
-#oqfazemos h1 {
-  font-size: 200px;
-}
-#oqfazemos div {
+
+#oquefazemos div {
   width: 100%;
 }
-#oqfazemos ul li {
-  margin: 0 1%;
+#oquefazemos ul li {
+  margin: 2% 1%;
   border-radius: 5px;
 }
 
